@@ -11,11 +11,11 @@ public class Chapter5 {
 
 		List<Task> list = new ArrayList<>();
 
-		list.add(new Task(LocalDate.of(2021, 10, 21), ":牛乳を買う。"));
-		list.add(new Task(LocalDate.of(2021, 9, 15), ":〇〇社面談。"));
-		list.add(new Task(LocalDate.of(2021, 12, 4), ":手帳を買う。"));
-		list.add(new Task(LocalDate.of(2021, 8, 10), ":散髪へ行く。"));
-		list.add(new Task(LocalDate.of(2021, 11, 9), ":スクールの課題を解く。"));
+		list.add(new Task(LocalDate.of(2021, 10, 21), "牛乳を買う。"));
+		list.add(new Task(LocalDate.of(2021, 9, 15), "〇〇社面談。"));
+		list.add(new Task(LocalDate.of(2021, 12, 4), "手帳を買う。"));
+		list.add(new Task(LocalDate.of(2021, 8, 10), "散髪へ行く。"));
+		list.add(new Task(LocalDate.of(2021, 11, 9), "スクールの課題を解く。"));
 
 		// ソート
 		Comparator<Task> compare = Comparator.comparing(Task::getDate);
@@ -23,7 +23,7 @@ public class Chapter5 {
 
 		// 出力
 		for (Task task : list) {
-			System.out.println(task.getDate() + task.getTask());
+			System.out.println(task.getDate() + ":" + task.getTask());
 
 		}
 	}
