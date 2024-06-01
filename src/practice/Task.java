@@ -7,8 +7,8 @@ public class Task {
 	private String task;
 
 	public Task(LocalDate date, String task) {
-		date = this.date;
-		task = this.task;
+		this.date = date;
+		this.task = task;
 	}
 
 	public LocalDate getDate() {
@@ -18,5 +18,6 @@ public class Task {
 	public String getTask() {
 		return task;
 	}
+
 
 }
