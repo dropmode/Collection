@@ -17,22 +17,13 @@ public class Chapter5 {
 		list.add(new Task(LocalDate.of(2021, 8, 10), ":散髪へ行く。"));
 		list.add(new Task(LocalDate.of(2021, 11, 9), ":スクールの課題を解く。"));
 
-		for (Task task : list) {
-			System.out.println(task.getDate());
-			System.out.println(task.getTask());
-
-		}
-
-		System.out.println();
-		
 		// ソート
 		Comparator<Task> compare = Comparator.comparing(Task::getDate);
 		list.sort(compare);
 
 		// 出力
 		for (Task task : list) {
-			System.out.println(task.getDate());
-			System.out.println(task.getTask());
+			System.out.println(task.getDate() + task.getTask());
 
 		}
 	}
